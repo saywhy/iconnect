@@ -1,0 +1,502 @@
+html,
+body {
+    height: 100%;
+    background-color: #f9fafc;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap>.container {
+    padding: 70px 15px 20px;
+}
+td, th {
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+
+a.asc:after,
+a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+
+.nav li>form>button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li>form>button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav>li>form>button.logout:focus,
+.nav>li>form>button.logout:hover {
+    text-decoration: none;
+}
+
+.nav>li>form>button.logout:focus {
+    outline: none;
+}
+
+.hoohoolab-footer {
+    margin-top: 50px;
+}
+
+/* index css */
+
+.box-body {
+    overflow-x: hidden;
+}
+
+.box-sed-top-left-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box-top {
+    padding: 0 25px;
+    /* border: 1px solid red; */
+}
+
+.head-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 116px;
+}
+
+.box-inside {
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 115px;
+    /* border: 1px solid rgba(85, 241, 255, 0.50); */
+    /* box-shadow: 0 9px 18px 5px rgba(60, 176, 184, 0.30), inset 0 -9px 8px 0 rgba(84, 241, 255, 0.50); */
+    border-radius: 10px;
+    /* background-color:red; */
+    border-left: 1px solid red;
+}
+
+.box-inside:nth-last-child(1) {
+    border: none;
+}
+
+.box-inside-p1 {
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    height: 70px;
+    padding-bottom: 10px;
+    line-height: 60px;
+}
+
+.box-inside-num {
+    font-size: 60px;
+    font-weight: 700;
+    color: #D29081;
+}
+
+.box-inside-unit {
+    font-size: 14px;
+}
+
+.box-inside-p2 {
+    font-size: 16px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+/* .item-top {
+    border-right: 1px solid red;
+} */
+
+.item-top:nth-last-child(1) {
+    margin-right: 0;
+    border: none;
+    border-top: 4px solid #54B87E;
+}
+
+.item-top:nth-child(1) {
+    border-top: 4px solid #C35C23;
+}
+
+.item-top:nth-child(3) {
+    border-top: 4px solid #2244B8;
+}
+
+.item-top:nth-child(2) {
+    border-top: 4px solid #4A968C;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.alarm {
+    color: #666;
+}
+
+/* 公共部分 */
+
+.box-header {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+}
+
+.sed,
+.third,
+.fourth {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* height: 365px; */
+    /* border: 1px solid red; */
+}
+
+.system,
+.flow,
+.equipment,
+.risk,
+.untreated,
+.threat,
+.top {
+    padding: 0 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-top: 3px solid #d2d6de;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 2px 2px 2px rgba(107,107,107,.5); */
+    /* border-color: #dee5e7; */
+}
+
+#sys,
+#safetyequipment,
+#riskassets,
+#untreatedalarm,
+#threattype {
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #ddd; */
+}
+
+#top10,
+#new {
+    padding: 10px;
+    width: 100%;
+    height: 235px;
+}
+
+/* 第二排---------- */
+
+/* 系统健康图表 */
+
+.container {
+    padding: 0 5px;
+}
+
+.box-block-red {
+    width: 20px;
+    height: 12px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: rgba(214, 72, 71, .8);
+}
+
+.box-block-green {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: rgba(131, 186, 174, .8);
+    width: 20px;
+    height: 12px;
+}
+
+.box-block-gray {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: #666;
+    width: 20px;
+    height: 12px;
+}
+
+.box-sed-left-left {
+    padding-top: 10px;
+    /* border: 1px solid #666; */
+}
+
+.box-sed-left-left-info {
+    white-space: nowrap;
+}
+
+.box-sed-left-span {
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 流量信息 */
+
+#flowinfo {
+    width: 100%;
+    height: 100px;
+}
+
+#flowtotal {
+    width: 100%;
+    height: 100px;
+}
+
+.flow-color2 {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 5px;
+    background-color: rgb(75, 106, 37);
+}
+
+.flow-color3 {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: rgb(186, 75, 72);
+    margin-right: 5px;
+}
+
+.flow-item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.flow-num {
+    position: absolute;
+    left: 110px;
+    top: 0;
+}
+
+/* 安全设备 */
+
+.equipment-left {
+    padding: 10px 15px;
+    height: 40px;
+    /* border: 1px solid #ddd; */
+}
+
+.equipment-left-info {
+    white-space: nowrap;
+}
+
+/* 第三排 */
+
+/* 风险资产 */
+
+/* .untreated-content {
+    height: 400px;
+    
+} */
+
+/* 第四排 */
+
+.bg-success {
+    border-radius: 10px;
+}
+
+.bg-color1 {
+    background-color: #F90504;
+}
+
+.bg-color2 {
+    background-color: #F93B04;
+}
+
+.bg-color3 {
+    background-color: #FE690B;
+}
+
+.bg-color4 {
+    background-color: #FCB503;
+}
+
+.bg-color5 {
+    background-color: #F9ED04
+}
+
+.more {
+    color: #666;
+    display: inline-block;
+    font-size: 28px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+table {
+    table-layout: fixed;
+}
+
+td,
+th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+/* 弹窗 */
+
+.pop {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 46, 46, .5);
+    border-radius: 10px;
+    z-index: 66;
+}
+
+.pop-content {
+    padding: 10px;
+    position: absolute;
+    width: 800px;
+    /* height: 400px; */
+    background-color: #fff;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 666;
+}
+
+.pop-content-head {
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+}
+
+.progress,
+.progress-bar {
+    height: 15px;
+}
+
+.sys-chart {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+}
+
+#sysEchartCpu,
+#sysEchartMem,
+#sysEchartDisk {
+    width: 100%;
+    height: 150px;
+}
+/* .imgloading{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    z-index: 666;
+} */
