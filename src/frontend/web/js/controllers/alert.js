@@ -178,6 +178,9 @@ myApp.controller('myCtrl', function ($scope, $http, $filter) {
             $scope.setPage(rsp.data);
         }, function err(rsp) {
             console.log(rsp);
+            if (rsp.data.status == 500) {
+                zeroModal.error(rsp.data.message)
+            }
         });
     };
     $scope.setPage = function (data) {

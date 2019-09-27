@@ -341,7 +341,6 @@ myApp.controller('systime', function ($scope, $http, $filter) {
     $scope.get_server_time = function (params) {
         $http.get('/seting/time-synchronization').then(function success(rsp) {
             console.log('12312323');
-
             if (rsp.data.time == null) {
                 $scope.timerChoose = {
                     timePickerIncrement: 10,
